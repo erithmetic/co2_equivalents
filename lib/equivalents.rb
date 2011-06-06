@@ -1,0 +1,3 @@
+module Equivalents
+  # Your code goes here...
+end
