@@ -4,10 +4,10 @@ class Firework < CO2Equivalents::Group
   description 'Pretty'
   citation 'http://boom.com', :title => 'Sparkle', :author => 'John Doe'
 
-  equivalent :mobile_offshore_drilling_unit_operations_for_a_day, 0.465
-  equivalent :mobile_offshore_drilling_unit_operations_for_a_year, 169.725
-  equivalent :semi_submersible_crane_vessel_operations_for_a_day, 0.572
-  equivalent :semi_submersible_crane_vessel_operations_for_a_year, 208.78
+  equivalent :firecracker, 0.465
+  equivalent :roman_candle, 169.725
+  equivalent :sparkler, 0.572
+  equivalent :whipper_snapper, 208.78
 end
 
 describe CO2Equivalents::Group do
