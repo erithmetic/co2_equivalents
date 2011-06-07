@@ -1,6 +1,10 @@
 module CO2Equivalents
   class Group
     class << self
+      def inherited(subclass)
+        CO2Equivalents.groups.push subclass
+      end
+
       def description(value = nil)
         if value
           @description = value

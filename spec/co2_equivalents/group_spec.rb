@@ -1,22 +1,26 @@
 require 'spec_helper'
 
+class Firework < CO2Equivalents::Group
+  description 'Pretty'
+  citation 'http://boom.com', :title => 'Sparkle', :author => 'John Doe'
+
+  equivalent :mobile_offshore_drilling_unit_operations_for_a_day, 0.465
+  equivalent :mobile_offshore_drilling_unit_operations_for_a_year, 169.725
+  equivalent :semi_submersible_crane_vessel_operations_for_a_day, 0.572
+  equivalent :semi_submersible_crane_vessel_operations_for_a_year, 208.78
+end
+
 describe CO2Equivalents::Group do
   it 'defines an equivalence group' do
-    class Firework < CO2Equivalents::Group
-      description 'Pretty'
-      citation 'http://boom.com', :title => 'Sparkle', :author => 'John Doe'
-
-      equivalent :mobile_offshore_drilling_unit_operations_for_a_day, 0.465
-      equivalent :mobile_offshore_drilling_unit_operations_for_a_year, 169.725
-      equivalent :semi_submersible_crane_vessel_operations_for_a_day, 0.572
-      equivalent :semi_submersible_crane_vessel_operations_for_a_year, 208.78
-    end
-
     Firework.description.should == 'Pretty'
     citation = Firework.citations.first
     citation.url.should == 'http://boom.com'
     citation.title.should == 'Sparkle'
     citation.author.should == 'John Doe'
+  end
+
+  it 'tracks the group in a global list' do
+    CO2Equivalents.groups.should include(Firework)
   end
 
   describe '.description' do

@@ -8,11 +8,11 @@
 require 'co2_equivalents'
 
 # simple unit conversion
-puts CO2Equivalents.grok(2840.7, :cars_driven_for_a_day)
+puts CO2Equivalents.grok(2840.7, :cars_driven_for_a_day).to_f
 #=> 343.6
 
 # return the default hash of equivalents
-puts CO2Equivalents.grok(2840.7).to_hash.inspect
+puts CO2Equivalents.grok(2840.7).inspect
 #=> {
   :light_bulbs_for_a_year: 1234.5,
   :light_bulbs_for_a_day: 454534.5,
@@ -21,7 +21,7 @@ puts CO2Equivalents.grok(2840.7).to_hash.inspect
 }
 
 # return a hash of equivalents for the electricity category
-puts CO2Equivalents.grok(2840.7, :electricity).to_hash.inspect
+puts CO2Equivalents.grok(2840.7, :electricity).inspect
 #=> {
   :light_bulbs_for_a_year: 1234.5,
   :light_bulbs_for_a_day: 454534.5,
