@@ -21,7 +21,13 @@ module CO2Equivalents
 
       def equivalent(*args)
         args.unshift self
-        CO2Equivalents.register *args
+        equivalent = CO2Equivalents.register *args
+        equivalences[equivalent.name] = equivalent
+        equivalent
+      end
+
+      def equivalences
+        @equivalences ||= {}
       end
     end
   end

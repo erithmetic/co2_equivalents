@@ -45,6 +45,13 @@ describe CO2Equivalents::Group do
       c.equivalent :test_equivalent, 0.001
       CO2Equivalents.registry[:test_equivalent].should be_a(CO2Equivalents::Equivalent)
     end
+    it 'keeps track of which equivalences belong to the group' do
+      c = Class.new CO2Equivalents::Group
+      c.equivalent :test_a, 0.001
+      c.equivalent :test_b, 0.002
+      c.equivalences[:test_a].factor.should == 0.001
+      c.equivalences[:test_b].factor.should == 0.002
+    end
   end
 end
 
