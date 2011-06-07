@@ -1,6 +1,6 @@
-module Equivalents
+module CO2Equivalents
   module Measurements
-    class HomeEnergy < Equivalents::Group
+    class HomeEnergy < CO2Equivalents::Group
       description 'Average home energy usage'
       citation 'http://www.eia.doe.gov/cneaf/electricity/epa/epates.html'
       citation 'http://www.epa.gov/climatechange/emissions/ind_calculator.html'

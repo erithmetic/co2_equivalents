@@ -1,8 +1,8 @@
-require 'equivalents/citation'
-require 'equivalents/equivalent'
-require 'equivalents/group'
+require 'co2_equivalents/citation'
+require 'co2_equivalents/equivalent'
+require 'co2_equivalents/group'
 
-module Equivalents
+module CO2Equivalents
   class << self
     def register(*args)
       equivalent = Equivalent.new *args
@@ -15,4 +15,4 @@ module Equivalents
   end
 end
 
-require 'equivalents/measurements'
+require 'co2_equivalents/measurements'

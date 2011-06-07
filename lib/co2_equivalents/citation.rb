@@ -1,4 +1,4 @@
-module Equivalents
+module CO2Equivalents
   class Citation
     attr_accessor :url, :title, :author
 

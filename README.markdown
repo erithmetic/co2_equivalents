@@ -40,7 +40,7 @@ class SemiSubmersible < Equivalents::Group
 end
 ```
 
-You can view the default set of equivalents in [lib/equivalents/measurements](http://github.com/dkastner/equivalents/tree/master/lib/equivalents/measurements).
+You can view the default set of equivalents in [lib/co2_equivalents/measurements](http://github.com/dkastner/co2_equivalents/tree/master/lib/co2_equivalents/measurements).
 
 # Note on Patches/Pull Requests
  

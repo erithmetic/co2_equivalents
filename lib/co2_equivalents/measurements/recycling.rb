@@ -1,6 +1,6 @@
-module Equivalents
+module CO2Equivalents
   module Measurements
-    class Recyling < Equivalents::Group
+    class Recyling < CO2Equivalents::Group
       description 'Energy saved by recycling'
       citation 'http://www.epa.gov/cleanenergy/energy-resources/refs.html'
       citation 'http://onetonco2.com/oneton.php'

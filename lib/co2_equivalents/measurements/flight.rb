@@ -1,6 +1,6 @@
-module Equivalents
+module CO2Equivalents
   module Measurements
-    class Flight < Equivalents::Group
+    class Flight < CO2Equivalents::Group
       description 'Average flight emissions'
       citation 'http://www.bts.gov/press_releases/2007/bts042_07/html/bts042_07.html#table_7', :title => 'June 2007 Airline Traffic Data', :author => 'Dave Smallen'
 

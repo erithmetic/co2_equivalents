@@ -1,16 +1,16 @@
 $:.push File.expand_path("../lib", __FILE__)
-require 'equivalents/version'
+require 'co2_equivalents/version'
 
 Gem::Specification.new do |s|
-  s.name = 'equivalents'
-  s.version = Equivalents::VERSION
+  s.name = 'co2_equivalents'
+  s.version = CO2Equivalents::VERSION
   s.platform = Gem::Platform::RUBY
   s.date = '2011-06-06'
   s.authors = ['Derek Kastner']
   s.email = 'dkastner@gmail.com'
   s.homepage = 'http://github.com/dkastner/equivalents'
   s.summary = %Q{Convert everyday units into human-grokable terms}
-  s.description = %Q{Equivalents converts everyday units of measurement into human-grokable units. For instance, you can convert kilograms of CO2 into "number of cars on the road for a day." It also adds the ability to list out a group of equivalences.}
+  s.description = %Q{CO2Equivalents converts everyday units of measurement into human-grokable units. For instance, you can convert kilograms of CO2 into "number of cars on the road for a day." It also adds the ability to list out a group of equivalences.}
   s.extra_rdoc_files = [
     'LICENSE',
     'README.markdown',

@@ -1,6 +1,6 @@
 require 'active_support/core_ext/string/conversions'
 
-module Equivalents
+module CO2Equivalents
   class Equivalent
     attr_accessor :group, :name, :factor
 

@@ -1,6 +1,6 @@
-module Equivalents
+module CO2Equivalents
   module Measurements
-    class Lightbulbs < Equivalents::Group
+    class Lightbulbs < CO2Equivalents::Group
       description 'Average lightbulb energy usage'
       citation 'http://www.popularmechanics.com/home_journal/home_improvement/4215199.html'
       citation 'http://www.energystar.gov/ia/partners/promotions/change_light/downloads/CALFacts_and_Assumptions.pdf'

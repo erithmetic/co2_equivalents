@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Equivalents::Group do
+describe CO2Equivalents::Group do
   it 'defines an equivalence group' do
-    class Firework < Equivalents::Group
+    class Firework < CO2Equivalents::Group
       description 'Pretty'
       citation 'http://boom.com', :title => 'Sparkle', :author => 'John Doe'
 
@@ -21,7 +21,7 @@ describe Equivalents::Group do
 
   describe '.description' do
     it 'sets a description' do
-      c = Class.new Equivalents::Group
+      c = Class.new CO2Equivalents::Group
       c.description 'Testing'
       c.description.should == 'Testing'
     end
@@ -29,10 +29,10 @@ describe Equivalents::Group do
 
   describe '.citation' do
     it 'creates a citation' do
-      c = Class.new Equivalents::Group
+      c = Class.new CO2Equivalents::Group
       c.citation 'http://example.com', :title => 'Title', :author => 'John Doe'
       citation = c.citations.first
-      citation.should be_a(Equivalents::Citation)
+      citation.should be_a(CO2Equivalents::Citation)
       citation.url.should == 'http://example.com'
       citation.title.should == 'Title'
       citation.author.should == 'John Doe'
@@ -41,9 +41,9 @@ describe Equivalents::Group do
 
   describe '.equivalent' do
     it 'creates an equivalent' do
-      c = Class.new Equivalents::Group
+      c = Class.new CO2Equivalents::Group
       c.equivalent :test_equivalent, 0.001
-      Equivalents.registry[:test_equivalent].should be_a(Equivalents::Equivalent)
+      CO2Equivalents.registry[:test_equivalent].should be_a(CO2Equivalents::Equivalent)
     end
   end
 end

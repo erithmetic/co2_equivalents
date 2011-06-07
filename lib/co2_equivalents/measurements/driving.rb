@@ -1,6 +1,6 @@
-module Equivalents
+module CO2Equivalents
   module Measurements
-    class Driving < Equivalents::Group
+    class Driving < CO2Equivalents::Group
       description 'Average automobile travel'
       citation 'http://www.epa.gov/otaq/climate/420f05004.htm'
       citation 'http://www.bts.gov/publications/national_transportation_statistics/html/table_04_23.html'

@@ -1,6 +1,6 @@
-module Equivalents
+module CO2Equivalents
   module Measurements
-    class Food < Equivalents::Group
+    class Food < CO2Equivalents::Group
       description 'Average food consumption'
       citation 'http://switchboard.nrdc.org/blogs/dlashof/prius_v_vegan.html'
 

@@ -1,6 +1,6 @@
-module Equivalents
+module CO2Equivalents
   module Measurements
-    class Fuel < Equivalents::Group
+    class Fuel < CO2Equivalents::Group
       description 'Average fuel consumption'
       citation 'http://www.epa.gov/cleanenergy/energy-resources/refs.html'
 

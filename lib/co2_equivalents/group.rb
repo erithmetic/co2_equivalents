@@ -1,4 +1,4 @@
-module Equivalents
+module CO2Equivalents
   class Group
     class << self
       def description(value = nil)
@@ -21,7 +21,7 @@ module Equivalents
 
       def equivalent(*args)
         args.unshift self
-        Equivalents.register *args
+        CO2Equivalents.register *args
       end
     end
   end
