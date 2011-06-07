@@ -9,11 +9,11 @@ Gem::Specification.new do |s|
   s.authors = ['Derek Kastner']
   s.email = 'dkastner@gmail.com'
   s.homepage = 'http://github.com/dkastner/equivalents'
-  s.summary = %Q{TODO: one-line summary of your gem}
-  s.description = %Q{TODO: detailed description of your gem}
+  s.summary = %Q{Convert everyday units into human-grokable terms}
+  s.description = %Q{Equivalents converts everyday units of measurement into human-grokable units. For instance, you can convert kilograms of CO2 into "number of cars on the road for a day." It also adds the ability to list out a group of equivalences.}
   s.extra_rdoc_files = [
     'LICENSE',
-    'README.rdoc',
+    'README.markdown',
   ]
 
   s.required_rubygems_version = Gem::Requirement.new('>= 1.3.7')
@@ -30,5 +30,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'bueller'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rcov'
+  s.add_dependency 'activesupport'
+  s.add_dependency 'i18n'
 end
 
