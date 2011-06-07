@@ -8,11 +8,11 @@
 require 'co2_equivalents'
 
 # simple unit conversion
-puts Equivalents.grok(2840.7, :cars_driven_for_a_day)
+puts CO2Equivalents.grok(2840.7, :cars_driven_for_a_day)
 #=> 343.6
 
 # return the default hash of equivalents
-puts Equivalents.grok(2840.7).to_hash.inspect
+puts CO2Equivalents.grok(2840.7).to_hash.inspect
 #=> {
   :light_bulbs_for_a_year: 1234.5,
   :light_bulbs_for_a_day: 454534.5,
@@ -21,7 +21,7 @@ puts Equivalents.grok(2840.7).to_hash.inspect
 }
 
 # return a hash of equivalents for the electricity category
-puts Equivalents.grok(2840.7, :electricity).to_hash.inspect
+puts CO2Equivalents.grok(2840.7, :electricity).to_hash.inspect
 #=> {
   :light_bulbs_for_a_year: 1234.5,
   :light_bulbs_for_a_day: 454534.5,
@@ -29,7 +29,7 @@ puts Equivalents.grok(2840.7, :electricity).to_hash.inspect
 }
 
 # defining your own equivalents
-class SemiSubmersible < Equivalents::Group
+class SemiSubmersible < CO2Equivalents::Group
   description 'Conversions for semi-submersible vehicles, such as oil platforms'
   citation 'http://shipinfo.org/index4.htm', :title => 'Ship Information Warehouse Statistics', :author => 'John Doe'
 
