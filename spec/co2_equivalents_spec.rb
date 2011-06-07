@@ -18,6 +18,10 @@ describe CO2Equivalents do
       result_set.should be_a(CO2Equivalents::ResultSet)
       result_set[:days_of_veganism].should > 0
     end
+    it 'returns correct results' do
+      CO2Equivalents.grok(1300)[:one_way_domestic_flight].to_i.should == 4
+    end
+
     it 'limits results to a chosen category'
     it 'limits results to a set of chosen categories'
     it 'limits results to a chosen unit'

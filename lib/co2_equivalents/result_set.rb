@@ -16,7 +16,7 @@ module CO2Equivalents
     def compute
       CO2Equivalents.groups.each do |group|
         group.equivalences.each do |name, equivalent|
-          self[name] = kgs_co2 / equivalent.factor
+          self[name] = kgs_co2.to_f * equivalent.factor
         end
       end
     end
