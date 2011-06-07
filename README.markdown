@@ -42,6 +42,8 @@ end
 
 You can view the default set of equivalents in [lib/co2_equivalents/measurements](http://github.com/dkastner/co2_equivalents/tree/master/lib/co2_equivalents/measurements).
 
+Each equivalence definition means "1 kg of CO2 is equal to X amount of my custom unit," e.g. 1 kg CO2 is equal to 0.465 Mobile Offshore Drilling Unit operations for a day.
+
 # Note on Patches/Pull Requests
  
 * Fork the project.
