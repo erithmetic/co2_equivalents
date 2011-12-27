@@ -2,6 +2,9 @@
 
 `co2_equivalents` converts CO2 measurements into human-[grok](http://en.wikipedia.org/wiki/Grok)able units. For instance, you can convert kilograms of CO2 into "number of cars on the road for a day." It also adds the ability to list out a group of equivalents.
 
+[![Build Status](https://secure.travis-ci.org/dkastner/co2_equivalents.png)](http://travis-ci.org/dkastner/co2_equivalents)
+
+
 # Usage
 
 ```ruby
